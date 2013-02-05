@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Rozga.WinJS.KnockoutIntegration", "Rozga.WinJS.KnockoutIntegration\Rozga.WinJS.KnockoutIntegration.jsproj", "{C609B262-2A47-4F83-AE1C-3ABEB93AB293}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B88B0CC7-BA82-40FF-98DA-3698F2424545}"
+	ProjectSection(SolutionItems) = preProject
+		LICENSE.txt = LICENSE.txt
+	EndProjectSection
+EndProject
+Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "Rozga.WinJS.KnockoutIntegration.TestRunner", "Rozga.WinJS.KnockoutIntegration.TestRunner\Rozga.WinJS.KnockoutIntegration.TestRunner.jsproj", "{C9207CA6-569C-4219-AD57-6A9B12CC6136}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs23
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Rozga.WinJS.KnockoutIntegration\\Rozga.WinJS.KnockoutIntegration.jsproj
+		SccProjectName1 = Rozga.WinJS.KnockoutIntegration
+		SccLocalPath1 = Rozga.WinJS.KnockoutIntegration
+		SccProjectUniqueName2 = Rozga.WinJS.KnockoutIntegration.TestRunner\\Rozga.WinJS.KnockoutIntegration.TestRunner.jsproj
+		SccProjectName2 = Rozga.WinJS.KnockoutIntegration.TestRunner
+		SccLocalPath2 = Rozga.WinJS.KnockoutIntegration.TestRunner
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|ARM.Build.0 = Debug|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x64.ActiveCfg = Debug|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x64.Build.0 = Debug|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x64.Deploy.0 = Debug|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x86.ActiveCfg = Debug|x86
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x86.Build.0 = Debug|x86
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Debug|x86.Deploy.0 = Debug|x86
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|ARM.ActiveCfg = Release|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|ARM.Build.0 = Release|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|ARM.Deploy.0 = Release|ARM
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x64.ActiveCfg = Release|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x64.Build.0 = Release|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x64.Deploy.0 = Release|x64
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x86.ActiveCfg = Release|x86
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x86.Build.0 = Release|x86
+		{C609B262-2A47-4F83-AE1C-3ABEB93AB293}.Release|x86.Deploy.0 = Release|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|ARM.Build.0 = Debug|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|ARM.Deploy.0 = Debug|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x64.ActiveCfg = Debug|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x64.Build.0 = Debug|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x64.Deploy.0 = Debug|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x86.ActiveCfg = Debug|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x86.Build.0 = Debug|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Debug|x86.Deploy.0 = Debug|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|ARM.ActiveCfg = Release|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|ARM.Build.0 = Release|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|ARM.Deploy.0 = Release|ARM
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x64.ActiveCfg = Release|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x64.Build.0 = Release|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x64.Deploy.0 = Release|x64
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x86.ActiveCfg = Release|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x86.Build.0 = Release|x86
+		{C9207CA6-569C-4219-AD57-6A9B12CC6136}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

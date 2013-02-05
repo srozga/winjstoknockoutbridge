@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+
+<!--
+/* Copyright (c) 2013 Szymon Rozga
+ * http://srozgawinjssamples.codeplex.com/
+ *
+ * See the file LICENSE.txt for copying permission. */
+ -->
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ObservableArray and ListView integration</title>
+
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/pages/koobservablearray/koobservablearray.js"></script>
+
+
+    <script type="text/html" id="todoItemTemplate">
+        <div class="task">
+            <h3 data-bind="text: title" class="task-title"></h3>
+            <input type="checkbox" data-bind="checked: completed" class="task-completed" />
+            <div class="task-rating" 
+                 data-win-control="WinJS.UI.Rating"
+                 data-bind="winjs_maxRating: maxRating, winjs_userRating: userRating, winjs_averageRating: averageRating, winjs_enableClear: enableClear"></div>
+        </div>
+    </script>
+</head>
+<body>
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">ko.observablearray to WinJS</span>
+            </h1>
+        </header>
+        <section aria-label="Main content" role="main">
+            <section>
+                <label for="newTaskTitle">Task: </label>
+                <input type="text" id="newTaskTitle" data-bind="inputelenterpressed: addItem.bind($data)" />
+            </section>
+
+            <section>
+                <div><span data-bind="text: outstandingItemsCount"></span> Outstanding Tasks</div>
+                <div><span data-bind="text: completedItemsCount"></span> Completed Tasks</div>
+            </section>
+
+            <section>
+                Selected Items: 
+                <div data-bind="foreach: selectedItems">
+                    <div data-bind="text: title"></div>
+                </div>
+            </section>
+
+            <div data-win-control="WinJS.UI.ListView" 
+                 data-win-options="{selectionMode: 'multi', swipeBehavior: 'select', tapBehavior: 'none',
+                                    layout: {type: WinJS.UI.ListLayout}}"
+                 data-bind="listviewselected: selectedItems, winjs_datasource: todoItems, winjs_itemtemplate: 'todoItemTemplate'"
+                 id="listview"></div>
+        </section>
+
+        <div id="appbar" data-win-control="WinJS.UI.AppBar"> 
+            <button data-win-control="WinJS.UI.AppBarCommand" 
+                    data-win-options="{id:'cmdRemoveItem',label:'Remove',icon:'delete',section:'selection',tooltip:'Remove'}"
+                    data-bind="click: removeSelectedItems.bind($data), winjs_hidden: areNoItemsSelected"></button> 
+        </div>
+    </div>
+</body>
+</html>

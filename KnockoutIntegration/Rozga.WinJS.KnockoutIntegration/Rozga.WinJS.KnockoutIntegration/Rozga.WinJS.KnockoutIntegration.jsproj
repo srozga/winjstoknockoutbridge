@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>c609b262-2a47-4f83-ae1c-3abeb93ab293</ProjectGuid>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
+    <VisualStudioVersion>11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.0</TargetPlatformVersion>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <PackageCertificateKeyFile>Rozga.WinJS.KnockoutIntegration_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>B81FD13391ECC6419B154C2E274CE477EC2DFEB9</PackageCertificateThumbprint>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="css\default.css" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\smalllogo.png" />
+    <Content Include="images\splashscreen.png" />
+    <Content Include="images\storelogo.png" />
+    <Content Include="js\default.js" />
+    <Content Include="js\lib\jquery-1.8.2.js">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="js\lib\knockout-2.2.1.js" />
+    <Content Include="js\lib\require.js" />
+    <Content Include="js\navigator.js" />
+    <Content Include="js\require-config.js" />
+    <Content Include="js\winjstoknockout-bridge\LICENSE.txt" />
+    <Content Include="js\winjstoknockout-bridge\README.txt" />
+    <Content Include="js\winjstoknockout-bridge\src\knockout.observablearray.dataadapter.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.input.enterpressed.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.listview.selectedbinding.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.observablearray.subscribe.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.appbar.menu.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.appbarandmenucommand.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.datepicker.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.listview.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.rating.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.wincontrol.bindings.js" />
+    <Content Include="js\winjstoknockout-bridge\src\ko.winjs.templateutils.js" />
+    <Content Include="js\winjstoknockout-bridge\winjstoknockout-bridge.js" />
+    <Content Include="pages\koobservablearray\koobservablearray.html" />
+    <Content Include="pages\koobservablearray\koobservablearray.js" />
+    <Content Include="default.html" />
+    <Content Include="pages\koobservablearray\todo-models.js" />
+    <None Include="Rozga.WinJS.KnockoutIntegration_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
